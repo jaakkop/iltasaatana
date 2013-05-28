@@ -3,9 +3,15 @@ var satanStr = " saatana";
 $(".juttuotsikko > a > span:last-of-type").each(function(index) {
 	currSpan = $(this).html();
 	prepended = false;
-
-	// Detect uppercase text
-	tmpSatanStr = (currSpan == currSpan.toUpperCase()) ? satanStr.toUpperCase() : satanStr;
+	
+	// Remove leading/trailing whitespace
+	currSpan = currSpan.trim();
+	
+	// Get last word for word case test
+	lastWord = currSpan.split(/\s+/).pop();
+	
+	// Detect case
+	tmpSatanStr = (lastWord == lastWord.toUpperCase()) ? satanStr.toUpperCase() : satanStr;
 	
 	// Detect chars and prepend
 	$(prependToChars).each(function(index, value) {
