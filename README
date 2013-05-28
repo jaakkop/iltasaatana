@@ -1,7 +1,7 @@
-Tribuutti Ilta-Saatanalle (iltasaatana.fi)
-
+Google Chrome -laajennuspalikka tribuuttina Ilta-Saatanalle (iltasaatana.fi)
+ 
 
 1. Avaa selaimessa chrome://extensions/
 2. Avaa tiedosto ja salli lataus https://github.com/jaakkop/iltasaatana/blob/master/iltasaatana.crx?raw=true
 3. Drag & Droppaa tiedosto extensions-ikkunaan
-4. Nauti!
+4. Avaa http://www.iltalehti.fi/ ja nauti saatana!
