@@ -1,4 +1,7 @@
 Tribuutti Ilta-Saatanalle (iltasaatana.fi)
 
-Valmiiksi pakattu Google Chrome -laajennus: iltasaatana.crx ("view raw" lataa tiedoston)
-Vedä ja raahaa ladattu filu Chromen laajennus-välilehteen ( "tools" -> "extensions" tai osoiteriville chrome://extensions/ )
+
+1. Avaa selaimessa chrome://extensions/
+2. Avaa tiedosto ja salli lataus https://github.com/jaakkop/iltasaatana/blob/master/iltasaatana.crx?raw=true
+3. Drag & Droppaa tiedosto extensions-ikkunaan
+4. Nauti!
