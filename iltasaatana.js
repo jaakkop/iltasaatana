@@ -61,7 +61,7 @@
 /* -- BODY -- */
 
 // Headlines
-$(".juttuotsikko > a > span:last-of-type").addSatan();
+$(".juttuotsikko > a > span:last-of-type:not(:empty)").addSatan();
 
 // Most read: Terveys
 $(".pvn_kolme_luetuinta_nosto p a:not(.palstakuva)").addSatan();
