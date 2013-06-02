@@ -11,21 +11,22 @@
 			
 			return this.each(function() {
 				var o = options;
+				var currText = null;
 				
-				// Remove child nodes
+				// Remove child nodes temporarily
 				if(o.excludeChildren) {
-					tmpChildren = $(this).children().clone();
+					var tmpChildren = $(this).children().clone();
 					$(this).children().remove();
 				}
 				
 				// Current element text
-				var currSpan = $(this).text();
+				currText = $(this).text();
 				
 				// Remove leading/trailing whitespace
-				currSpan = currSpan.trim();
+				currText = currText.trim();
 				
 				// Get last word for word case test
-				var lastWord = currSpan.split(/\s+/).pop();
+				var lastWord = currText.split(/\s+/).pop();
 				
 				// Detect case
 				var appendStr = (lastWord == lastWord.toUpperCase()) ? o.appendStr.toUpperCase() : o.appendStr;
@@ -33,18 +34,18 @@
 				// Detect chars and prepend
 				var prepended = false;				
 				$(o.beforeChars).each(function(index, value) {
-					lastCharIndex = currSpan.length-1;
-					if(currSpan.charAt(lastCharIndex) == value) {
-						currSpan = currSpan.substring(0, lastCharIndex) + o.delimiter + appendStr + value + o.delimiter;
+					lastCharIndex = currText.length-1;
+					if(currText.charAt(lastCharIndex) == value) {
+						currText = currText.substring(0, lastCharIndex) + o.delimiter + appendStr + value + o.delimiter;
 						prepended = true;
 					} 
 				});
 				
 				// Append
-				if(!prepended) currSpan += o.delimiter + appendStr + o.delimiter;
+				if(!prepended) currText += o.delimiter + appendStr + o.delimiter;
 				
 				// Modify
-				$(this).html(currSpan);
+				$(this).text(currText);
 				
 				// Append earlier removed child nodes
 				if(o.excludeChildren) {
