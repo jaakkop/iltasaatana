@@ -8,7 +8,10 @@
 3. Drag & Droppaa ladattu tiedosto Extensions (suom. "Laajennukset") -sivuun
 4. Avaa [www.iltalehti.fi](http://www.iltalehti.fi/) ja nauti saatana!
 
-### Changelog:
+### Versiomuutokset:
+- **Versio 0.2.1**
+    - Bugikorjauksia
+
 - **Versio 0.2**
     - Skaalautuvampi rakenne
     - Muotoilee myös monia muita elementtejä kuin pääotsikoita
