@@ -11,7 +11,7 @@
 
 ### Mozilla Firefox
 1. Avaa selain
-2. Avaa tiedosto ja salli lataus [ilta-saatana.xpi](http://bit.ly/13cWfIH)
+2. Avaa tiedosto ja salli lataus [ilta-saatana.xpi](http://bit.ly/10R8ZBV)
 3. Drag & Droppaa ladattu tiedosto selaimeen ja hyväksy laajennus
 4. Avaa [www.iltalehti.fi](http://www.iltalehti.fi/) ja nauti saatana!
 
@@ -28,7 +28,7 @@
     - Muotoilu pelkästään pääotsikoihin 
 
 ## Kiitokset
-[errnoh](https://github.com/errnoh/iltasaatana) (porttaus Firefox-selaimelle)
+[errnoh](https://github.com/errnoh/) (porttaus Firefox-selaimelle)
 
 ## Muuta
 Mikäli sait jotain kiksejä tästä teoksesta niin vippaa vaikka bitcoineja (esim 1 mBTC): 
