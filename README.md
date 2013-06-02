@@ -1,14 +1,21 @@
-# Ilta-Saatana -laajennus Google Chromelle
+# Ilta-Saatana -selainlaajennus Google Chromelle ja Mozilla Firefoxille
 
-### Google Chrome -laajennuspalikka tribuuttina Ilta-Saatanalle (iltasaatana.fi)
+### Selainlaajennus tribuuttina Ilta-Saatanalle (iltasaatana.fi)
 
-## Asennusohjeet 
-1. Avaa tiedosto ja salli lataus [iltasaatana.crx](http://bit.ly/135K9kB)
+## Asennusohjeet
+### Google Chrome
+1. Avaa tiedosto ja salli lataus [iltasaatana.crx](http://bit.ly/12XEGLe)
 2. Avaa selaimessa osoite `chrome://extensions/`
 3. Drag & Droppaa ladattu tiedosto Extensions (suom. "Laajennukset") -sivuun
 4. Avaa [www.iltalehti.fi](http://www.iltalehti.fi/) ja nauti saatana!
 
-### Versiomuutokset:
+### Mozilla Firefox
+1. Avaa selain
+2. Avaa tiedosto ja salli lataus [iltasaatana.crx](http://bit.ly/17M2Xun)
+3. Drag & Droppaa ladattu tiedosto selaimeen ja hyväksy laajennus
+4. Avaa [www.iltalehti.fi](http://www.iltalehti.fi/) ja nauti saatana!
+
+## Versiomuutokset:
 - **Versio 0.2.1**
     - Bugikorjauksia
 
@@ -20,5 +27,9 @@
     - Ensimmäinen release
     - Muotoilu pelkästään pääotsikoihin 
 
+## Kiitokset
+[errnoh](https://github.com/errnoh/iltasaatana) (tuki Firefox-selaimelle)
+
+## Muuta
 Mikäli sait jotain kiksejä tästä teoksesta niin vippaa vaikka bitcoineja (esim 1 mBTC): 
 `1GT6cWrKRcwtvA87RvtNZtuMHKyXhEFKye`
