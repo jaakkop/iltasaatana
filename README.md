@@ -27,6 +27,12 @@
     - Ensimmäinen release
     - Muotoilu pelkästään pääotsikoihin 
 
+## TODO
+- Tekstin skaalaus alaspäin (toteutettu, testauksessa)
+- Tuki muille sivustoille, kuten iltasanomat.fi
+- Julkaisu Chrome Web Storeen (harkinnassa)
+- Automaattiset päivityslataukset
+
 ## Kiitokset
 [errnoh](https://github.com/errnoh/) (porttaus Firefox-selaimelle)
 
