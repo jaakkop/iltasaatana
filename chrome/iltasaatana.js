@@ -17,7 +17,7 @@
 				
 				// Remove child nodes temporarily
 				if(o.excludeChildren) {
-					var tmpChildren = $(this).children().clone();
+					var $tmpChildren = $(this).children().clone();
 					$(this).children().remove();
 				}
 				
@@ -51,7 +51,7 @@
 				
 				// Append earlier removed child nodes
 				if(o.excludeChildren) {
-					$(this).append(tmpChildren);
+					$(this).append($tmpChildren);
 				}
 				
 				// Scale font size down if allowed
@@ -60,7 +60,7 @@
 					// If wider than original size
 					if(modWidth > origWidth) {
 						// Set iteration limit in case of endless loop
-						safety = 500;
+						var safety = 500;
 						// Get font size
 						var fontSize = parseInt($(this).css("fontSize"));
 						while($(this).width() > origWidth) {
