@@ -6,12 +6,14 @@
 					beforeChars: ["\"", "?", "!"],
 					appendStr: "saatana",
 					delimiter: " ",
+					allowDownScale: false,
 			};
 			var options = $.extend(defaults, options);
 			
 			return this.each(function() {
 				var o = options;
 				var currText = null;
+				var origWidth = $(this).width();
 				
 				// Remove child nodes temporarily
 				if(o.excludeChildren) {
@@ -51,6 +53,32 @@
 				if(o.excludeChildren) {
 					$(this).append(tmpChildren);
 				}
+				
+				// Scale font size down if allowed
+				if(o.allowDownScale) {
+					var modWidth = $(this).width();
+					// If wider than original size
+					if(modWidth > origWidth) {
+						// Set iteration limit in case of endless loop
+						safety = 500;
+						// Get font size
+						var fontSize = parseInt($(this).css("fontSize"));
+						while($(this).width() > origWidth) {
+							// Decrease font size
+							fontSize -= 2;
+							$(this).css("fontSize", fontSize+"px");
+							// Update iteration count
+							safety--;
+							// In case of emergency...
+							if(safety < 0) {
+								console.log("Propably stuck in a loop, breaking out");
+								// Restore font size
+								$(this).css("fontSize", origWidth+"px");
+								break;
+							}
+						}
+					}
+				}
 			});
 		}
 	});
@@ -61,7 +89,7 @@
 /* -- BODY -- */
 
 // Headlines
-$(".juttuotsikko > a > span:last-of-type:not(:empty)").addSatan();
+$(".juttuotsikko > a > span:last-of-type:not(:empty)").addSatan({allowDownScale: true});
 
 // Most read: Terveys
 $(".pvn_kolme_luetuinta_nosto p a:not(.palstakuva)").addSatan();
