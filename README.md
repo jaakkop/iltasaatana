@@ -9,6 +9,8 @@
 3. Drag & Droppaa ladattu tiedosto Extensions (suom. "Laajennukset") -sivuun
 4. Avaa [www.iltalehti.fi](http://www.iltalehti.fi/) ja nauti saatana!
 
+**HUOM!** Jos tiedosto ei näy latauslistalla, tiedoston pitäisi löytyä silti latauskansiosta. Raahaa tiedosto sieltä.
+
 ### Mozilla Firefox
 1. Avaa selain
 2. Avaa tiedosto ja salli lataus [ilta-saatana.xpi (v0.2.1)](http://bit.ly/10R8ZBV)
